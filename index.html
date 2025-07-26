@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shahd Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body class="min-h-screen bg-gradient-to-br from-green-200 via-green-800 to-green-00 bg-fixed bg-no-repeat bg-cover text-white">
+
+    <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/10 border-b border-white/20">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">Shahd Eid</h1>
+        <ul class="hidden md:flex space-x-6 font-medium">
+          <li><a href="#home" class="hover:text-green-300">Home</a></li>
+          <li><a href="#about" class="hover:text-green-300">About</a></li>
+          <li><a href="#projects" class="hover:text-green-300">Projects</a></li>
+          <li><a href="#contact" class="hover:text-green-300">Contact</a></li>
+        </ul>
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2"viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        </button>
+      </div>
+      <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-4 px-4 pb-4 font-medium">
+        <li><a href="#home" class="block hover:text-green-500">Home</a></li>
+        <li><a href="#about" class="block hover:text-green-500">About</a></li>
+        <li><a href="#projects" class="block hover:text-green-500">Projects</a></li>
+        <li><a href="#contact" class="block hover:text-green-500">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="home" class="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center gap-10 px-6 pt-32 md:pt-0">
+  <div class="text-center md:text-left">
+    <h2 class="section-title text-3xl md:text-5xl font-extrabold opacity-0 translate-y-8 transition-all duration-1000">Welcome to My Portfolio</h2>
+    <p class="mt-4 text-lg">I'm Shahd, a Front-End Developer who loves creative interfaces and beautiful experiences.</p><br><br>
+     <h1 class="text-center section-title text-3xl md:text-5xl opacity-0 translate-y-8 transition-all duration-1000">Drop down for more 👇</h1>
+  </div>
+  <img src="WhatsApp Image 2025-07-24 at 01.58.05_014ef77f.jpg" alt="Shahd" class="w-40 h-40 md:w-64 md:h-64 rounded-full object-cover shadow-lg transform hover:scale-105 transition duration-700 border-4 border-white" />
+
+ 
+    </section>
+
+    <section id="about" class="min-h-8-screen flex items-center justify-center flex-col">
+      <h2 class="section-title text-4xl font-bold opacity-0 translate-y-8 transition-all duration-1000">About Me</h2><br><br>
+      <p class="section-title opacity-0 translate-y-8 transition-all duration-1000 pl-3" style="width: 600px;" >Hello! I'm Shahd Eid, a passionate and creative Front-End Developer.  
+      I enjoy bringing ideas to life through clean, responsive, and interactive websites.  
+      I'm currently learning advanced web development tools like React, and I'm always excited to improve my skills.
+      <br><br>
+      Besides coding, I love organizing my work, solving problems, and turning designs into real experiences.  
+      I'm dedicated, fast-learning, and always ready for a new challenge.</p>
+    </section>
+
+    <section id="projects" class="py-16 section-title opacity-0 translate-y-8 transition-all duration-1000">
+  <div class="container h-auto px-4 text-center ">
+    <h2 class="text-3xl font-bold mb-10">My Projects</h2>
+    <div class="flex justify-center gap-6 mb-8">
+      <div onclick="showProject('html')" class="tech-box transition hover:scale-110 duration-300 cursor-pointer size-12">
+        <button class="w-10 mx-auto mb-2 b-1"><i class="fa-brands fa-html5 text-yellow-500"></i></button>
+        <p>HTML</p>
+      </div>
+      <div onclick="showProject('js')" class="tech-box transition hover:scale-110 duration-300 cursor-pointer">
+        <button class="w-10 mx-auto mb-2 b-1"><i class="fa-brands fa-square-js text-yellow-300"></i></button>
+        <p>JavaScript</p>
+      </div>
+      <div onclick="showProject('react')" class="tech-box transition hover:scale-110 duration-300 cursor-pointer">
+        <button class="w-10 mx-auto mb-2 "><i class="fa-brands fa-react text-cyan-400"></i></button>
+        <p>React</p>
+      </div>
+    </div>
+    <div id="projectCard" class="max-w-xl mx-auto p-6 mt-6 border border-white/20 bg-white/10 backdrop-blur-md rounded-xl text-white opacity-0 transition-opacity duration-700"></div>
+  </div>
+  <section id="skills" class="mt-20 text-center section-title opacity-0 translate-y-8 transition-all duration-1000">
+  <h2 class="section-title text-3xl font-bold mb-8">My Skills</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-3xl mx-auto">
+    <div class="flex items-center gap-4 bg-white/10 backdrop-blur-sm p-4 rounded-lg transition-transform hover:scale-105">
+      <i class="fab fa-html5 text-4xl text-orange-500"></i>
+      <span class="text-white text-xl font-medium">HTML</span>
+    </div>
+
+    <div class="flex items-center gap-4 bg-white/10 backdrop-blur-sm p-4 rounded-lg transition-transform hover:scale-105">
+      <i class="fab fa-css3-alt text-4xl text-blue-500"></i>
+      <span class="text-white text-xl font-medium">CSS</span>
+    </div>
+
+    <div class="flex items-center gap-4 bg-white/10 backdrop-blur-sm p-4 rounded-lg transition-transform hover:scale-105">
+      <i class="fab fa-js text-4xl text-yellow-400"></i>
+      <span class="text-white text-xl font-medium">JavaScript</span>
+    </div>
+
+    <div class="flex items-center gap-4 bg-white/10 backdrop-blur-sm p-4 rounded-lg transition-transform hover:scale-105">
+      <i class="fab fa-react text-4xl text-cyan-400"></i>
+      <span class="text-white text-xl font-medium">React</span>
+    </div>
+  </div>
+</section>
+</section>
+   <section id="contact" class="mt-20 text-center mb-8">
+  <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+
+  <div class="flex justify-center gap-6 flex-wrap">
+    <a href="https://shahdeid305@icloud.com" target="_blank" class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg text-white hover:scale-105 transition">
+      <i class="fas fa-cloud text-red-500 text-xl"></i>
+      <span>Icloud</span></a>
+
+    <a href="https://www.linkedin.com/in/shahd-eid-6b24622b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"
+       class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg text-white hover:scale-105 transition">
+      <i class="fab fa-linkedin text-blue-600 text-xl"></i>
+      <span>LinkedIn</span>
+    </a>
+    <a href="https://github.com/shahdeid06" target="_blank"
+       class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg text-white hover:scale-105 transition">
+      <i class="fab fa-github text-white text-xl"></i>
+      <span>GitHub</span>
+    </a>
+    <a href="https://www.facebook.com/share/16jQJv7thL/?mibextid=wwXIfr" target="_blank"
+       class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg text-white hover:scale-105 transition">
+      <i class="fab fa-facebook text-blue-500 text-xl"></i>
+      <span>Facebook</span>
+    </a>
+
+  </div>
+</section>
+
+
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
