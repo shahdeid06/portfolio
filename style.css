@@ -1,3 +1,33 @@
 html{
-    scroll-behavior: smooth ;
+  scroll-behavior: smooth ;
 }  
+.typing {
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: white; }
+}
+.tech-box {
+  transition: all 0.3s ease;
+}
+.tech-box:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+  border-radius: 0.5rem;
+}
+@media (max-width: 768px) {
+  section {
+    scroll-margin-top: 250px;
+  }
+  #home p {
+    font-size: 0.775rem;
+  }
+}
