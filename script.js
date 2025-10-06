@@ -40,7 +40,7 @@ const projects = {
   title: "React Project",
   description: "A React app built using components, hooks, and state management.",
   image: "Screenshot 2025-07-26 033755.png",
-  liveLink: "https://ecommerce-react-ijwp.vercel.app/",
+  liveLink: "https://ecommerce-react-iota-five.vercel.app/",
   codeLink: "https://github.com/shahdeid06/Ecommerce-React"
 }
 };
@@ -59,3 +59,4 @@ function showProject(type) {
 }
 
 AOS.init({ duration: 1000, once: true });
+
