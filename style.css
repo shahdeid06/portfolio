@@ -31,3 +31,8 @@ html{
     font-size: 0.775rem;
   }
 }
+.drop {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: -15px;
+}
+
